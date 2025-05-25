@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootStrap Button</title>
+  <!-- my css starts here -->
+   <style>
+    .btn{
+      padding: 10px 20px;
+      border: 1px solid;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight:400;
+      letter-spacing: 1px;
+      margin-right: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all .15s ease;
+    }
+    .btn-primary{
+      background-color: rgb(93, 0, 127);
+      color: white;
+      border: none;
+    }
+    .btn-secondary{
+      background-color:whitesmoke;
+      color: rgb(93, 0, 127);
+      border:1px solid rgb(93, 0, 127);
+    }
+
+    .btn-primary:hover, .btn-secondary:hover{
+      background-color: rgb(73, 0, 107);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transform: translateY(-2px);
+    }
+    .btn-secondary:hover{
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(255, 255, 255);
+    }
+   </style>
+</head>
+<body>
+  <!-- BootStrap Button -->
+  <h1>This is a Example of BootStrap Button with pseudo-class styles</h1>
+  <button class="btn btn-primary">Get Started</button>
+  <button class="btn btn-secondary">Download</button>
+</body>
+</html>
