@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D CLick</title>
+  <!-- add your css style here -->
+   <style>
+    body{
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .btn-shadow{
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 300;
+      font-style: normal;
+      color:white;
+      background-color: green;
+      padding: 15px 30px;
+      box-shadow: 4px 4px 3px rgba(0, 0, 0, .4);
+      transition: all 1.5ms ease;
+      cursor:pointer;
+    }
+    .btn-shadow:hover {
+      background-color: #006400;
+    }
+    .btn-shadow:active {
+      box-shadow: none;
+      transform: translate(3px,3px);
+      transition: all 0.15ms ease;
+    }
+   </style>
+</head>
+<body>
+  <div>
+    <h1 class="btn-shadow">Shadow</h1>
+  </div>
+</body>
+</html>

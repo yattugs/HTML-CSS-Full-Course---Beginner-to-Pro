@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin and padding together</title>
+<!-- style css here -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      display: inline-block;
+      margin: 0;
+      padding: 10px;
+    }
+    h2 {
+      display: inline-block;
+      font-size: 14px;
+      margin: 10px 20px;
+      padding: 8px;
+      background-color: darkgreen;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border-radius: 2px;
+      transition: all 0.15s ease;
+      cursor: pointer;
+    }
+    h2:hover {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      background-color: green;
+      padding: 8px 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Margin and Padding Together</h1>
+  <div style="margin: 20px; padding: 20px; background-color: lightblue; text-align: center;">
+    <p>This div has both margin and padding applied.</p>
+    <h2>One</h2>
+    <h2>Two</h2>
+    <h2>Three</h2>
+  </div>
+</body>
+</html>
