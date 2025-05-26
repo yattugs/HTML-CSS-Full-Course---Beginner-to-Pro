@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+  background-color: #f4f4f4;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+}
+h1{
+  font-size: 3.5rem;
+  font-weight:700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+p{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.description>span{
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+  text-decoration: underline;
+} 

@@ -1,0 +1,1 @@
+most of the lesson6 exercise is seperate file css and link to html file,use proper title and html structure for web structure, also use link to imbeded the seperate file css. also we use filepath ,google fonts.
