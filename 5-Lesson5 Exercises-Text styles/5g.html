@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweeter message</title>
+  <!-- add your css here -->
+   <style>
+    * { /* Reset styles */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f0f0f0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .tweet-header {
+      font-size: 16px;
+      color: black;
+      margin-bottom: 10px;
+    }
+    .tweet-header>span {
+      color: #888;
+      font-size: 14px;
+    }
+    .tweet-message, .tweet-message2 {
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .tweet-message2>span {
+      color: #1DA1F2; /* Twitter blue */
+      font-weight: 300; /* Bold */
+      cursor: pointer; /* Pointer cursor for interactivity */
+    }
+   </style>
+</head>
+<body>
+  <p class="tweet-header">
+    <strong>freeCodeCamp.org</strong>
+    <span>
+      @freeCodeCamp 1h
+    </span>
+  </p>
+  <p class="tweet-message">
+    As a web developer, you can use the <code>fetch</code> API to make HTTP requests to retrieve data from a server. This is a powerful tool that allows you to interact with APIs and fetch resources dynamically.
+  </p>
+  <p class="tweet-message2">
+    Here <span>@chp_it</span> outlines the top skills new developers should focus on.
+  </p>
+</body>
+</html>
