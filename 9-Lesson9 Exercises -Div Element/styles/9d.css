@@ -1,0 +1,29 @@
+*{ /*reset*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  padding: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+} 
+.parent-container {
+  background-color: rgb(21, 9, 9);
+  display: inline-block;
+  padding: 10px 20px;
+  width: auto
+}
+h1{
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 18px;
+  display:block;
+}
+p{
+  display: inline-block;
+  color: lightslategray;
+  font-size: 12px;
+}

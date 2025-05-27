@@ -1,0 +1,17 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.circle {
+  width: 200px;
+  height:200px;
+  background-color: green;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
