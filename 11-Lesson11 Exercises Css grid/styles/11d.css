@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 50px;
+  background-color: #f0f0f0;
+  font-family: montserrat,sans-serif;
+}
+.description{
+  margin-bottom: 3rem;
+}
+.parent-container-cards{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 0 50px;
+  width: 100%;
+}
+.child-card{
+  display: grid;
+  grid-template-columns: 350px; /*this define 1 column only*/
+  background-color: white ;
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+}
+.thumbnail-container > img{
+  width: 100%;
+  height: 350px;
+  object-fit:cover;
+  overflow: hidden;
+}
+.mutual-friends{
+  display: inline-grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  width: 100%;
+  column-gap: 20px;
+}
+.profile-pic{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* object-position: center; */
+  border-radius: 50%;
+}
+.info-container{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: start;
+  padding: 20px;
+  gap: 15px 0;
+}
+
+.info-container button{
+  background-color: rgb(3, 35, 35);
+  color: white;
+  font-size: 1rem;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.204);
+  transition: all 0.15s ease;
+}
+.info-container button:hover{
+  background-color: white;
+  color:rgb(3, 35, 35);
+  font-size: 1.5rem;
+}

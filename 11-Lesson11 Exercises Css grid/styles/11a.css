@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* display grid */
+.parent-con{
+  display: grid;
+  grid-template-columns: 500px 200px ; /*this will determin the size of column*/
+  grid-template-rows: 300px 100px ;
+  row-gap: 10px;
+  justify-content: baseline;
+  text-align: right;
+
+}
+.box1{
+  background-color: skyblue;
+  padding: 20px;
+  font-size: 20px;
+}
+.box2{
+  background-color: lightpink;
+  padding: 20px;
+  font-size: 20px;
+}
