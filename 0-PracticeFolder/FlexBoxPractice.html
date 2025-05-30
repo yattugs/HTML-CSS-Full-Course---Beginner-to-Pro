@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box Pratice</title>
+  <style>
+    /* next line of code will apply for Example 1 flexbox only */
+    .flex-container {  /*On the Container:*/
+      display: flex; /* Activates flexbox on the container*/
+      justify-content: center; /* Aligns items horizontally (main axis).*/
+      align-items:center; /* Aligns items vertically (cross axis).*/
+      flex-direction: row; /*Sets the direction of items (row, column, etc.).*/
+      height: 200px;
+      background: #e0f7fa;
+      flex-wrap:wrap; /*Allows items to wrap onto multiple lines.*/
+      width: auto;
+      gap: 5px 20px;
+    }
+    .flex-container > div {
+      background: #00838f;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 1.2em;
+    }
+
+    /* next line of code will apply second example */
+    .flex-container-2 {
+      margin-top: 30px;
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      flex-direction: row;
+      height: 200px;
+      background: #e0f7fa;
+      flex-wrap: wrap;
+      width: auto;
+      gap: 5px 20px;
+    }
+    .flex-container-2 > div {
+      background: #00838f;
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 1.2em;
+      flex-grow: 1;      /* All items grow equally by default */
+      flex-shrink: 1;    /* All items shrink equally by default */
+      flex-basis: 100px; /* Initial size before growing/shrinking */
+    }
+    
+    /* Make the first item grow twice as much as others */
+    .flex-container-2 > div:first-child {
+      flex-grow: 1;
+    }
+    /* Make the second item not shrink */
+    .flex-container-2 > div:nth-child(2) {
+      flex-shrink: 0;
+    }
+    /* Make the third item start with a larger base size */
+    .flex-container-2 > div:nth-child(3) {
+      flex-basis: 500px;
+    }
+    /* Make the fourth item align to flex-end vertically */
+    .flex-container-2 > div:nth-child(4) {
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <!-- example 1 -->
+  <h1>This is a Flexbox Example 1</h1>
+  <div class="flex-container">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+  </div>
+<!-- Example 2  -->
+  <h1>This is a Flexbox Example 2</h1>
+  <div class="flex-container-2">
+    <div>Item 1<br>(flex-grow:2)</div>
+    <div>Item 2<br>(flex-shrink:0)</div>
+    <div>Item 3<br>(flex-basis:200px)</div>
+    <div>Item 4<br>(align-self:flex-end)</div>
+</body>
+</html>

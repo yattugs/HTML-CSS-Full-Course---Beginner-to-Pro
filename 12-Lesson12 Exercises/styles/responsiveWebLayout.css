@@ -1,0 +1,123 @@
+*{ /*reset element default style*/
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body{
+  background-color: #f0f0f0;
+  font-family: ubuntu,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.parent-container{
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  /* align-items: center; */
+}
+.child-header{
+  background-color: yellow;
+  text-align: center;
+  padding: 15px 30px;
+  font-family: serif;
+  font-size: 12px;
+}
+.title-header-container{
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  row-gap: 10px;
+  background-color: rgb(32, 178, 170);
+  text-align: center;
+  padding: 50px; */
+
+  background-color: rgb(32, 178, 170);
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  vertical-align: middle;
+}
+.title-header-container h1{
+  margin-bottom: 16px;
+  font-size: 42px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+.title-header-container p{
+  font-size: 18px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+.navigate-container{ /*This will be manipulate the navigation link*/
+  display: flex;
+  background-color: black;
+  column-gap: 20px;
+
+}
+.navigate-container a{ /*navlink styles*/
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px 25px;
+  /* transition: all 0.15s ease; */
+}
+.navigate-container a:hover{
+  background-color: gray;
+}
+/* next line of code will affect the content-container */
+.content-container *{
+  margin-bottom: 15px;
+}
+.side-bar-container img{
+  width: 100%;
+  height:250px;
+  object-fit: fill;
+}
+
+.content-container{
+  display: flex;
+  gap: 10px;
+  box-sizing: content-box;
+  
+}
+.side-bar-container{
+  background-color: darkgrey;
+  flex: 1;
+  padding: 15px 25px ;
+  margin-bottom: 0;
+}
+
+.imageFlex-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr; */
+}
+.main-content{
+  flex:2;
+  padding: 15px 25px ;
+}
+
+/* third footer only will affect */
+.footer-container {
+  background-color: rgb(32, 178, 170);
+  text-align: center;
+  padding: 50px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .navigate-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: stretch;
+    flex-shrink: 0;
+  }
+
+  .content-container{ /*main content will make 1 column*/
+    display: flex;
+    flex-direction: column;
+  }
+}
