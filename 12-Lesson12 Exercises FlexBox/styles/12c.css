@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box1{
+  padding: 10px;
+  background-color: antiquewhite;
+}
+.box2{
+  padding: 10px;
+  background-color: aqua;
+}
+.box3{
+  padding: 10px;
+  background-color: aquamarine;
+}
+.box4{
+  padding: 10px;
+  background-color:blue;
+}
+.flexContainer{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(0, 0, 0);
+
+}
