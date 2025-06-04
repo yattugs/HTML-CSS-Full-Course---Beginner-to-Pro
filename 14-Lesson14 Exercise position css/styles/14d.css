@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.fixed-header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 48px;
+}
+
+/* The .coverDIV class creates a full-screen, semi-transparent overlay.
+  It uses fixed positioning to cover the entire viewport and centers its content using flexbox. */
+.coverDIV {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The .modal class styles the modal dialog box.
+  It gives the modal a white background, padding, rounded corners, and a subtle shadow for emphasis. */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
