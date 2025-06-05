@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  padding-bottom: 3000px; /* Extra space to allow scrolling */
+}
+.fixed-div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: blue;
+  color: #ffffff;
+  border: none;
+  width: 20%;
+  height: 20%;
+}

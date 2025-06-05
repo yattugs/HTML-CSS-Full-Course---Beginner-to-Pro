@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 3000px; /* Extra space to allow scrolling */
+}
+.relative-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-color: blue;
+  color: #ffffff;
+  border:none;
+}
+.close-button {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  background-color: red;
+  color: white;
+  padding: 15px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
