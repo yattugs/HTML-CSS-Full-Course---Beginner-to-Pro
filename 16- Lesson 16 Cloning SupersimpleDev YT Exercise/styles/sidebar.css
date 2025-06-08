@@ -1,0 +1,120 @@
+/* sidebar */
+.sidebar {
+  position: fixed;
+  top: 80px; /* Below the header */
+  bottom: 0;
+  left: 0;
+  width: auto; /* Adjust width as needed */
+  background-color: #fff;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.15s ease; /* Smooth transition for width changes */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100px; /* Adjust height as needed */
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease; 
+  row-gap: 5px;
+  
+}
+.sidebar nav ul li:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+  cursor: pointer;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.203); /* Add a border-like effect on hover */
+  border-radius: 2px; /* Rounded corners on hover */
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* media queries max-width of 768px to smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: min-content; /* Adjust width for smaller screens */
+    box-sizing: content-box; /* Adjust width for smaller screens */
+  }
+
+  .sidebar nav ul li {
+    height: 80px;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 12px;
+  }
+}
+/* media queries max-width of 480px to smaller screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: min-content; /* Adjust width for smaller screens */
+    box-sizing: content-box; /* Adjust width for smaller screens */
+  }
+
+  .sidebar nav ul li {
+    height: 60px;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 10px;
+  }
+}
+/* media queries max-width of 320px to smaller screens */
+@media (max-width: 320px) {
+  .sidebar {
+    width: min-content; /* Adjust width for smaller screens */
+    box-sizing: content-box; /* Adjust width for smaller screens */
+  }
+
+  .sidebar nav ul li {
+    height: 50px;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 8px;
+  }
+}
+/* media queries min-width of 1024px */
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 250px; /* Adjust width for larger screens */
+  }
+
+  .sidebar nav ul li {
+    height: 80px; /* Maintain height for larger screens */
+    display: flex;
+    flex-direction: row; /* Horizontal layout for larger screens */
+    justify-content:stretch; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+    row-gap: 0; /* Remove row gap for larger screens */
+    flex: 1; /* Allow items to grow and fill available space */
+    padding-left: 15%; /* Add padding for larger screens */
+  }
+
+  .sidebar nav ul li a {
+    font-size: 16px;
+  }
+  .sidebar nav ul li:hover {
+    background-color: #e0e0e0; /* Slightly darker on larger screens */
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3); /* More pronounced border-like effect */
+  }
+}

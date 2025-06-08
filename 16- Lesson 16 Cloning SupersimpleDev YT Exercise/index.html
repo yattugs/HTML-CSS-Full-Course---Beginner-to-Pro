@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Cloning</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!-- 
+Key semantic tags used:
+
+<header>: Top of the page, branding, search, user menu.
+
+<nav>: Navigation links (inside header and sidebar).
+
+<form role="search">: Semantic search bar.
+
+<main>: Main content area.
+
+<aside>: Sidebar navigation.
+
+<section>: Main section for video feed.
+
+<article>: Individual video card.
+
+<footer>: Page footer. 
+
+These tags help with accessibility and SEO, making the structure of the page clear to both users and search engines.
+
+  -->
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="main-nav" aria-label="Main Navigation">
+      <div class="left-nav">
+        <img src="images/header-image/hamburger-menu.svg" alt="hamburger-menu" width="30" height="30">
+        <img src="images/header-image/youtube-logo.svg" alt="youtube-logo" width="100" height="30">
+      </div>
+      <div class="center-nav">
+        <form class="search-bar" role="search">
+          <input type="text" placeholder="Search" aria-label="Search" title="Search">
+          <button type="submit" aria-label="Submit search">
+            <i class="fas fa-search" title="Search"></i>
+          </button>
+        </form>
+        <button class="voice-search-icon">
+          <i class="fas fa-microphone" title="Voice Search"></i>
+        </button>
+      </div>
+      <div class="right-nav">
+        <img src="images/header-image/upload.svg" alt="upload-icon" width="30" height="30" title="Upload">
+        <img src="images/header-image/youtube-apps.svg" alt="youtube-apps-icon" width="30" height="30" title="YouTube Apps">
+        <img src="images/header-image/notifications.svg" alt="notifications-icon" width="30" height="30" title="Notifications">
+        <img src="images/header-image/my-channel.jpeg" alt="my-channel-icon" width="30" height="30" title="My Channel">
+      </div>
+    </nav>
+  </header>
+  <!-- Main content -->
+  <main>
+    <aside class="sidebar" aria-label="Sidebar"> <!-- Sidebar navigation -->
+      <nav>
+        <ul>
+          <li>
+            <img src="images/sidebar-image/home.svg" alt="Home" width="30" height="30" title="Home">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <img src="images/sidebar-image/explore.svg" alt="Explore" width="30" height="30" title="Explore">
+            <a href="#">
+              Explore
+            </a>
+          </li>
+          <li>
+            <img src="images/sidebar-image/subscriptions.svg" alt="Subscriptions" width="30" height="30" title="Subscriptions">
+            <a href="#">
+              Subscriptions
+            </a>
+          </li>
+          <li>
+            <img src="images/sidebar-image/library.svg" alt="Library" width="30" height="30" title="Library">
+            <a href="#">
+              Library
+            </a>
+          </li>
+          <li>
+            <img src="images/sidebar-image/originals.svg" alt="Originals" width="30" height="30" title="Originals">
+            <a href="#">
+              Originals
+            </a>
+          </li>
+          <li>
+            <img src="images/sidebar-image/youtube-music.svg" alt="YouTube Music" width="30" height="30" title="YouTube Music">
+            <a href="#">
+              YouTube Music
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="video-feed" aria-label="Video Feed"> <!-- Main section for video content -->
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-1.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-1.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-1.jpeg" alt="Marques Brownlee" width="50" height="50">
+              <p>Marques Brownlee <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Talking Tech and AI with Google CEO Sundar Pichai!</h3>
+            <p>Marques Brownlee</p> 
+            <p>3.4M views &middot; 6 months ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-2.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">10:45</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-2.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+             <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-2.jpeg" alt="Markiplier" width="50" height="50">
+              <p>Markiplier <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Try Not To Laugh Challenge #9</h3>
+            <p>Markiplier</p>
+            <p>19M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-3.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-3.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-3.jpeg" alt="SSSniperWolf" width="50" height="50">
+              <p>SSSniperWolf <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Crazy Tik Toks Taken Moments Before DISASTER</h3>
+            <p>SSSniperWolf</p>
+            <p>12M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-4.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-4.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-4.jpeg" alt="Veritasium" width="50" height="50">
+              <p>Veritasium <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>The Simplest Math Problem No One Can Solve - Collatz Conjecture</h3>
+            <p>Veritasium</p>
+            <p>18M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-5.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-5.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-5.jpeg" alt="CS Dojo" width="50" height="50">
+              <p>CS Dojo <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Kadane's Algorithm to Maximum Sum Subarray Problem</h3>
+            <p>CS Dojo</p>
+            <p>519K views  &middot; 5 years ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-6.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-6.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-6.jpeg" alt="MrBeast" width="50" height="50">
+              <p>MrBeast <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Anything You Can Fit In The Circle I'll Pay For</h3>
+            <p>MrBeast</p>
+            <p>141M views  &middot; 1 year ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-7.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-7.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-7.jpeg" alt="RealLifeLore" width="50" height="50">
+              <p>RealLifeLore <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Why Planes Don't Fly Over Tibet</h3>
+            <p>RealLifeLore</p>
+            <p>6.6M views  &middot; 1 year ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-8.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-8.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-8.jpeg" alt="Tech Vision" width="50" height="50">
+              <p>Tech Vision <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Inside The World's Biggest Passenger Plane</h3>
+            <p>Tech Vision</p>
+            <p>3.7M views  &middot; 10 months ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-9.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-9.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-9.jpeg" alt="ThenX" width="50" height="50">
+              <p>ThenX <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>The SECRET to Super Human STRENGTH</h3>
+            <p>ThenX</p>
+            <p>20M views  &middot; 3 years ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-10.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-10.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-10.jpeg" alt="Business Insider" width="50" height="50">
+              <p>Business Insider <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</h3>
+            <p>Business Insider</p>
+            <p>14M views  &middot; 1 year ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-11.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-11.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-11.jpeg" alt="Destination Tips" width="50" height="50">
+              <p>Destination Tips <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>Dubai's Crazy Underwater Train and Other Things #Only in Dubai</h3>
+            <p>Destination Tips</p>
+            <p>3M views  &middot; 1 year ago</p>
+          </div>
+        </div>
+      </article>
+      <article class="video"> <!-- Individual video card -->
+        <div class="thumbnail">
+          <img src="images/main-content-image/thumbnail-img/thumbnail-12.webp" alt="Video Thumbnail" width="100%" height="auto">
+          <div class="duration">12:34</div>
+        </div>
+        <div class="video-info">
+          <div class="channel-icon">
+            <img src="images/main-content-image/channel-img/channel-12.jpeg" alt="Channel Icon" width="40" height="40">
+            <!-- tooltip for channel picture -->
+            <span class="tooltip">
+              <img src="images/main-content-image/channel-img/channel-12.jpeg" alt="TED-Ed" width="50" height="50">
+              <p>TED-Ed <br> 3.4M subscribers</p>
+            </span>
+          </div>
+          <div class="info-text">
+            <h3>What would happen if you didn't drink water? - Mia Nacamulli</h3>
+            <p>TED-Ed</p>
+            <p>5M views  &middot; 5 years ago</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer> 
+    <!-- <p>&copy; 2025 YouTube Clone</p> -->
+  </footer>
+</body>
+</html>
