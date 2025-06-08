@@ -1,0 +1,1 @@
+This commit is completed all exercise and cloning the youtube pages from supersimpleDev. Including the exercises from lesson 17. in this commit I add @media quesries for screen types,do project YOUTUBE CLONING, etc.
