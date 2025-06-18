@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Fredoka', sans-serif;
+  color: rgb(24, 49, 83);
+  background-color: rgba(240, 241, 243, 1);
+  padding-top: 70px; /* to avoid content being hidden behind the fixed navbar */
+  padding-bottom: 3000px; /* scrollable content */
+}
+ /* banner */
+  .banner {
+    width: 100%;
+    height: auto;
+    background-image:url("assets/banner-bg.png"),radial-gradient(circle, #ffec99 10%, #ffd43b 25%, #fab005 60%);
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    box-sizing:content-box;
+  }

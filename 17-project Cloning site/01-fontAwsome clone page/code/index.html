@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="Refresh" content="5"> Refresh the page every 5 seconds -->
+  <title>Font Awesome Clone</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="customProperties.css">
+<!-- JavaScript for Hamburger Menu -->
+  <script>
+      const hamburger = document.querySelector('.hamburger-menu');
+      const leftNav = document.querySelector('.left-nav');
+    
+      hamburger.addEventListener('click', () => {
+        leftNav.classList.toggle('active');
+        hamburger.classList.toggle('active');});
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="left-nav">
+        <i class="fa-solid fa-bars hamburger-menu"></i>
+        <a href="#">Start</a>
+        <a href="#">Search</a>
+        <a href="#">Icons</a>
+        <a href="#">Docs</a>
+        <a href="#">Plans</a>
+        <a href="#">Support</a>
+        <a href="#">Podcast</a>
+      </div>
+      <div class="center-nav">
+        <i class="fa-brands fa-square-font-awesome-stroke"></i>
+      </div>
+      <div class="right-nav">
+        <i class="fa-solid fa-right-to-bracket"></i>
+      </div>
+      </nav>
+      <!-- navigation javascript for hamburger menu -->
+      
+    </header>
+    
+  <main>
+    <!-- section 1 -->
+    <section class="section1-hero">
+      <div class="banner">
+        <div class="banner-content">
+          <div class="img-banner">
+            <img src="assets/banner-fav-img.svg" alt="img-banner-font-awesome" width="100%">
+          </div>
+          <h2>
+            Icons for your
+            <span>websites.</span>
+            <br> Easy. Done.
+          </h2>
+          <p>Serving up new icons, styles, and improvements in June 2025. Pre-order  before launch and get a discounted price!</p>
+          <button>
+            <i class="fa-solid fa-circle-arrow-right"></i>
+            <span>Watch the Announcement</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Section 2 Features-->
+    <section class="section2-CTA-hook-container">  
+      <div class="video-container">
+        <video width="100%" height="100%" controls autoplay loop muted>
+          <source src="/17-project Cloning site/01-fontAwsome clone page/video-background/Recording-section1-background.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="CTA-container">
+        <div class="discount-text-con">
+          <h2>20% OFF SALE</h2>
+          <p>First Year Discount!</p>
+          <div class="triangle-icon">
+            <i class="fa-solid fa-caret-down"></i> <!-- positioning icon -->
+          </div>
+        </div>
+        <div class="button clock-icon">
+          <a href="#" >
+            <i class="fa-solid fa-clock"></i>
+            <span>Pre-Order &#43; Get Instant Access</span>
+          </a>
+        </div>  
+        <div class="button globe-icon">
+          <a href="#">
+            <i class="fa-solid fa-globe"></i>
+            <span>Pre-Order &#43; Get Instant Access</span>
+          </a>
+        </div>
+      <div class="text-container">
+        <p>Pre-order FA 7 before it's released and get a 20% discount
+          <span>for the first year</span>.
+          (Includes instant access to FA 6.)
+        </p>
+      </div>
+      </div>
+    </section>
+    <!-- Section 3 -->
+    <section>
+      <div class="section3-parentContainer section3">
+        <div class="text-container">
+          <p class="subtitle">New Recipe. Same Great Taste.</p>
+          <h2 class="title">
+            Font awesome 7 
+            <span>pro</span>
+          </h2>
+          <p>The next generation of the internet's favorite icon library and toolkit is here. Featuring more icons, better performance, and new ways to make yourdesigns look (and taste?) great.
+          <span>
+            <a href="#">Pre-Order Now</a>
+          </span>
+            . Available in June 2025.
+          </p>
+        </div>
+        <div class="sec3-flexbox-container">
+          <div class="sec3-box1">
+            <img src="assets/v7-icon-grids.png" alt="Illustration of Version 7 Icon Key Frames" width="100%">
+            <h4>Revamped + Refreshed Icons</h4>
+            <p> We've lovingly refined the designs for most of our icons,using more consistent keyshapes and square canvases.</p>
+            <div class="position-text">updated!</div>
+          </div>
+          <div class="sec3-box2">
+            <img src="assets/v7-new-icon.png" alt="Fresh new icons for Version 7" width="100%">
+            <h4>Fresh New Icons</h4>
+            <p> The initial release of Font Awesome 7 includes over 300 brand-new icons, with more on the way!</p>
+            <div class="position-text">new!</div>
+          </div>
+          <div class="sec3-box3">
+            <div class="left-con">
+              <i class="fa-solid fa-wrench"></i>
+              <h4>New Modifiers!</h4>
+              <p>Create over 1 million possible icons with the
+                <span><a href="#">Wizard</a></span>
+              </p>
+            </div>
+            <div class="right-con">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <h4>Icon Upload!</h4>
+              <p>Easily upload new icons to use alongside existing Font Awesome icons.
+                <span><a href="#">Wizard</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 4 -->
+    <section>
+      <div class="section4-parentContainer section4">
+        <div class="subtitle">
+          <h4>Included Icon Packs</h4>
+        </div>
+        <div class="img-flexContainer">
+          <div class="img-container-Classic img">
+            <a href="#"><span>classic</span></a>
+          </div>
+          <div class="img-container-Duotone img">
+            <a href="#"><span>Duotone</span></a>
+          </div>
+          <div class="img-container-Sharp img">
+            <a href="#"><span>Sharp</span></a>
+          </div>
+          <div class="img-container-SharpDuotone img">
+            <a href="#"><span> Sharp Duotone</span></a>
+          </div>
+          <div class="img-container-Brands img">
+            <a href="#"><span>Brands</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 5 -->
+    <section class="section5-parentContainer section5">
+      <div class="text-container">
+        <h4>No reservation required</h4>
+        <h2>1 line of code... 1 million + icons.</h2>
+        <p>No need to download, install, or manage files. Our Kits CDN does it all with a single line of code. With Font Awesome Free, you get easy access to
+        over 2,000 icons. 
+        <a href="#">Upgrade to a Pro plan</a>
+        for even more.
+        </p>
+      </div>
+      <div class="form-container">
+        <div class="form-imageRocket">
+          <img src="assets/start-illustration-homepage.svg" alt="Illustration of a rocket launching" width="100%">
+        </div>
+        <form action="#" method="post">
+          <div class="input-container">
+            <label for="email">Enter your email to start with free kit!</label>
+            <input type="email" id="email" name="email" placeholder="e.g. violet@freshsqueezed.org" required>
+          </div>
+          <div class="radio-container">
+            <input type="checkbox" id="free" name="plan" value="free" >
+            <label for="free">I agree to the
+              <a href="#">terms service</a> and <a href="#">privacy policy</a>.
+            </label>
+          </div>
+          <button class="btn-start" type="submit">
+            Start for Free
+            <i class="fa-solid fa-globe"></i>
+          </button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </form>
+      </div>
+    </section>
+    <!-- Section 6 -->
+    <section class="section6-parentContainer section6">
+      <div class="text-container">
+        <h4>Hot off the griddle</h4>
+        <h2>New Icon Packs <span>Pro +</span>
+        </h2>
+        <p>Entirely new, visually unique "small batch" icon packs designed in collaboration with world-class icon designers. Available as part of our <span>new Pro+ plans</span> when Font Awesome 7 launches in June 2025.</p>
+      </div>
+      <div class="upgrade-container">
+        <i class="fa-solid fa-shapes"></i>
+        <div class="upgrade-text-container">
+          <p class="upgrade-description">Each Pro+ icon pack contains a curated selection of the <strong>200 most common icons</strong> needed for app and website design.
+          </p>
+          <a href="#" class="upgrade-link">
+            <h4 class="upgrade-title btn-upgrade">
+              <span><i class="fa-solid fa-tag" style="color: rgb(24, 49, 83); vertical-align: middle;"></i></span> 
+              Upgrade to Pro+
+            </h4>
+          </a>
+        </div>
+      </div>
+      <div class="img-flexContainer"></div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

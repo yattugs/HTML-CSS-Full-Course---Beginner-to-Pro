@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.left-nav,
+.center-nav,
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav a,
+.right-nav i {
+  margin-right: 1.5rem;
+}
+
+.center-nav i, .right-nav i {
+  font-size: 2rem;
+}
+.left-nav a { /*remove decoration of a link*/
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* nav media queries max-width 768px*/
+@media (max-width: 768px) {
+  .navbar{
+    position: static; /* make navbar static for small screens */
+  }
+}
