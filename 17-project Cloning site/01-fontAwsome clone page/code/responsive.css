@@ -271,7 +271,7 @@
     gap: 1.5rem;
   }
   .sec3-flexbox-container .sec3-box3 .left-con{
-    color: var(--text-white-color);
+    color: var(--text-secondary-color);
     background-color: var(--bg-darkblue-color);
     font-size: inherit;
     font-size: 300;
@@ -347,7 +347,8 @@
     text-decoration: dotted;
     text-decoration-line: underline;
   }
-  .section4 .img-flexContainer{
+  /* mixed same layout with section 6 combined with advanced css selector */
+  .section4 .img-flexContainer, .section6 .img-flexContainer {
     display: flex;
     flex-direction: column;
     flex-wrap:nowrap;
@@ -360,7 +361,8 @@
     margin: auto auto;
     text-align: center;
   }
-  .section4 .img-flexContainer img{
+  /* mixed same layout with section 6 combined with advanced css selector */
+  .section4 .img-flexContainer img, .section6 .img-flexContainer .img-thumbnail {
     width: 100%;
     height: 137px; /* adjust as needed */
     object-fit:contain;
@@ -369,7 +371,8 @@
     flex: 1 1 100%; /* allow images to take full width on small screens */
 
   }
-  .section4 .img-flexContainer > .img {
+  /* mixed same layout with section 6 combined with advanced css selector */
+  .section4 .img-flexContainer > .img, .img-flexContainer > .img-thumbnail {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
@@ -400,7 +403,7 @@
   .section4 .img-container-Brands {
     background-image: url('assets/icon-pack-image/brands-thumb.svg');
   }
-  .section4 .img-flexContainer span{
+  .section4 .img-flexContainer span, .section6 .img-flexContainer span {
     visibility:hidden; /* hide text on small screens */
   }
 
@@ -594,6 +597,48 @@
   .section6 .upgrade-text-container a{
     text-decoration:none;
     color: inherit; /* inherit color from parent */
+  }
+  .section6 .img-flexContainer{ 
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section6 .img-flexContainer [data-text="newPackDescription"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: inherit;
+    border-style: dashed;
+    
+  }
+  .section6 .img-flexContainer [data-text="newPackDescription"] > p{
+    font-size: 0.8rem; /* adjust as needed */
+    margin: 0;
+    line-height: 1.5rem; /* allow line height to adjust based on content */
+    color: var(--text-primary-color);
+  }
+
+  .section6 .img-flexContainer [data-text="newPackDescription"] i{
+    font-size: 2rem;
+    color: var(--text-darkgreen-color);
+    margin-bottom: 0.5rem; /* add space between icon and text */
+  }
+  .section6 .img-flexContainer .tale-color-text{
+    font-size: 0.8rem; /* adjust as needed */
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5rem; /* allow line height to adjust based on content */
+    color: var(--text-primary-color);
+    background-color: var(--bg-lightgreen-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    letter-spacing: 1px;
   }
 
 } /* <-- do not remove this end curly for @media (max-width: 768px) */

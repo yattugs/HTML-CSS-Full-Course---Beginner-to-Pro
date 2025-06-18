@@ -6,6 +6,8 @@
   --text-yellow-color:rgb(250, 176, 5); /* yellow-4 */
   --text-lightblue-color: rgb(116, 192, 252); /* lightblue */
   --text-darkviolet-color:rgb(103, 65, 217); /* violet-8 */
+  --text-lightviolet-color:rgb(177, 151, 252); /* violet-3 */
+  --text-darkgreen-color:rgb(12, 166, 120); /* green-9 */
   /* background-color */
   --bg-darkblue-color: rgb(24, 49, 83); /* blue */
   --bg-white-color: rgb(255, 255, 255); /* white */
