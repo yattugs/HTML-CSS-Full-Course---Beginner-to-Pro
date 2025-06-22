@@ -640,6 +640,86 @@
     border-radius: 8px;
     letter-spacing: 1px;
   }
+  /* section 7 */
+  .section7-parentContainer{
+    text-align: center;
+    margin-top: 50px; /* adjust as needed */
+    padding: 0 1.55rem;
+  }
+  .tech-updateText-container h4{
+    font-size: 0.8rem; /* adjust as needed */
+    margin: 0;
+    font-weight: 500;
+    line-height: 2.5rem; /* allow line height to adjust based on content */
+    color: var(--text-darkviolet-color);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-decoration: dotted;
+    text-decoration-line: underline;
+  }
+  .tech-updateText-container h2{
+    font-size: 1.5rem; /* adjust as needed */
+    font-weight: 600;
+    line-height: 2.5rem; /* allow line height to adjust based on content */
+    margin: 0.8rem 0;
+  }
+  .tech-updateText-container p{
+    font-size: 0.8rem; /* adjust as needed */
+    margin: 0;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;/* allow line height to adjust based on content */
+  }
+  .sec7-grid-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  .sec7-grid-container .child-grid-con:nth-child(odd){
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-darkviolet-color);
+    color: var(--text-secondary-color); 
+    position: relative;
+  }
+  .sec7-grid-container .child-grid-con:nth-child(even){
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-white-color);
+    color: var(--text-primary-color);
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  } .text-info-con i{
+    font-size: 1.7rem;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  .text-info-con h5{
+    font-size: .95rem;
+    text-align: start;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .text-info-con p{
+    font-size: .80rem;
+    margin: 0;
+    line-height: 1.2rem; /* allow line height to adjust based on content */
+    text-align: justify;
+  }
+  .child-grid-con .new-label{
+    top: 0;
+    transform:translate(-50%, -50%);
+    position: absolute;
+    padding: 0.2rem 0.5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: var(--text-white-color);
+    background-color: var(--text-darkgreen-color);
+    text-transform: uppercase;
+  }
+  
 
 } /* <-- do not remove this end curly for @media (max-width: 768px) */
 
