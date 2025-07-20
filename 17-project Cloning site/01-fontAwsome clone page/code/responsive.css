@@ -719,6 +719,84 @@
     background-color: var(--text-darkgreen-color);
     text-transform: uppercase;
   }
+  .sec7-flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 3.5rem 1.5rem;
+    gap: 2rem; /* add gap between boxes */
+  }
+  .section7 .child-flex-con{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    background-color: var(--bg-white-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem 1.8rem; 
+  }
+  .childImage-flex-con{
+    width: 100%;
+    flex: 1 1 auto; /* allow image to take full width on small screens */
+    text-align: center;
+  }
+  .childImage-flex-con img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .childText-flex-con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 0.5rem; /* add space between text elements */
+    margin-top: 0.5rem; /* add space between icon and text */
+  }
+  .child-flex-con .child-title{
+    font-size: 0.9rem; /* adjust as needed */
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5rem; /* allow line height to adjust based on content */
+    color: inherit;
+    text-align: center;
+    margin: 0.8rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+  }
+  .childText-flex-con i{
+    font-size: 0.9rem;
+    color: var(--bg-rainbow-color);
+  } 
+  .childText-flex-con span{
+    font-family: inherit;
+    font-size: 0.7rem; /* adjust as needed */
+    line-height: 1.2rem;
+    letter-spacing: 1px; /* allow line height to adjust based on content */
+    text-decoration: dotted underline;
+    text-underline-offset:  3px;
+    margin-left: 8px;
+    
+  }
+  childtext-1 span{
+    color: var(--text-lightblue-color);
+  }
+  .childtext-2 span{
+    color: var(--text-darkviolet-color);
+  }
+  
+  .childtext-3 span {
+    color: var(--text-darkgreen-color);
+  }
+  .childText-flex-con > a{
+    text-decoration: none;
+    font-weight: 400;
+  }
   
 
 } /* <-- do not remove this end curly for @media (max-width: 768px) */
