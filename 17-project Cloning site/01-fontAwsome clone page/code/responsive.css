@@ -329,7 +329,7 @@
   }
   .sec3-box3 .right-con:hover,
   .sec3-box3 .left-con:hover{
-    transform: scale(1.05) skew(-2deg) ;
+    transform: scale(1.05) skew(-2deg)  ;
   }
   /* section 4 styles */
   .section4{
@@ -798,6 +798,37 @@
     font-weight: 400;
   }
   
+  /*Section 8 */
+  .section8{
+    text-align:center;
+    margin-top:50px;
+    padding: 0 1.55rem;
+  }
+  .sec8-text-con h4{
+    font-size: 0.8rem; /* adjust as needed */
+    margin: 0;
+    font-weight: 500;
+    line-height: 2.5rem; /* allow line height to adjust based on content */
+    color: var(--text-yellow-color);
+    letter-spacing: .1563rem;
+    text-transform: uppercase;
+    text-decoration: dotted;
+    text-decoration-line: underline;
+  }
+  .sec8-text-con h2{
+    font-size: 1.5rem; /* adjust as needed*/
+    margin: 0;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin: 12.28px 0;
+    text-transform: capitalize;
+  }
+  .sec8-text-con p{
+    font-size: .76rem;
+    font-weight: 400;
+    line-height: 1.17rem;
+
+  }
 
 } /* <-- do not remove this end curly for @media (max-width: 768px) */
 
